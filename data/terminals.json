@@ -1,0 +1,124 @@
+[
+  {
+    "id": "TMA",
+    "name": "Terminal A — International",
+    "shortName": "TMA",
+    "floors": [
+      {
+        "id": 0,
+        "name": "Departures",
+        "corridors": [
+          { "x": 20, "y": 200, "w": 760, "h": 36 },
+          { "x": 20, "y": 340, "w": 760, "h": 36 },
+          { "x": 300, "y": 20, "w": 36, "h": 480 },
+          { "x": 500, "y": 20, "w": 36, "h": 480 }
+        ],
+        "zones": [
+          { "id": "A-checkin",    "name": "Check-in Hall",       "shortName": "Check-in",   "x": 20,  "y": 20,  "w": 276, "h": 176, "type": "checkin",  "terminalId": "TMA", "floor": 0, "sensors": 5, "binCount": 4, "capacity": 800 },
+          { "id": "A-security",   "name": "Security Control",    "shortName": "Security",   "x": 340, "y": 20,  "w": 156, "h": 176, "type": "security", "terminalId": "TMA", "floor": 0, "sensors": 4, "binCount": 2, "capacity": 300 },
+          { "id": "A-lounge1",    "name": "Business Lounge",     "shortName": "Biz Lounge", "x": 540, "y": 20,  "w": 240, "h": 176, "type": "lounge",   "terminalId": "TMA", "floor": 0, "sensors": 3, "binCount": 3, "capacity": 120 },
+          { "id": "A-wc1m",       "name": "Restroom — Men",      "shortName": "WC M",       "x": 20,  "y": 240, "w": 80,  "h": 96,  "type": "restroom", "terminalId": "TMA", "floor": 0, "sensors": 2, "binCount": 3, "capacity": 20 },
+          { "id": "A-wc1f",       "name": "Restroom — Women",    "shortName": "WC W",       "x": 110, "y": 240, "w": 80,  "h": 96,  "type": "restroom", "terminalId": "TMA", "floor": 0, "sensors": 2, "binCount": 3, "capacity": 20 },
+          { "id": "A-pharmacy",   "name": "Travel Pharmacy",     "shortName": "Pharmacy",   "x": 200, "y": 240, "w": 96,  "h": 96,  "type": "retail",   "terminalId": "TMA", "floor": 0, "sensors": 1, "binCount": 1, "capacity": 40 },
+          { "id": "A-dutyfree1",  "name": "Duty Free — Luxury",  "shortName": "Duty Free",  "x": 340, "y": 240, "w": 156, "h": 96,  "type": "retail",   "terminalId": "TMA", "floor": 0, "sensors": 3, "binCount": 2, "capacity": 150 },
+          { "id": "A-food1",      "name": "International Food Hall","shortName":"Food Hall", "x": 540, "y": 240, "w": 240, "h": 96,  "type": "food",     "terminalId": "TMA", "floor": 0, "sensors": 4, "binCount": 6, "capacity": 200 },
+          { "id": "A-gate1",      "name": "Gate A1",             "shortName": "A1",         "x": 20,  "y": 380, "w": 84,  "h": 120, "type": "gate",     "terminalId": "TMA", "floor": 0, "gateCode": "A1", "sensors": 2, "binCount": 2, "capacity": 180 },
+          { "id": "A-gate2",      "name": "Gate A2",             "shortName": "A2",         "x": 116, "y": 380, "w": 84,  "h": 120, "type": "gate",     "terminalId": "TMA", "floor": 0, "gateCode": "A2", "sensors": 2, "binCount": 2, "capacity": 180 },
+          { "id": "A-gate3",      "name": "Gate A3",             "shortName": "A3",         "x": 212, "y": 380, "w": 84,  "h": 120, "type": "gate",     "terminalId": "TMA", "floor": 0, "gateCode": "A3", "sensors": 2, "binCount": 2, "capacity": 180 },
+          { "id": "A-wc2",        "name": "Restroom — Airside",  "shortName": "WC Air",     "x": 340, "y": 380, "w": 80,  "h": 120, "type": "restroom", "terminalId": "TMA", "floor": 0, "sensors": 3, "binCount": 4, "capacity": 30 },
+          { "id": "A-cafe1",      "name": "Café Aéro",           "shortName": "Café",       "x": 432, "y": 380, "w": 64,  "h": 120, "type": "food",     "terminalId": "TMA", "floor": 0, "sensors": 2, "binCount": 3, "capacity": 60 },
+          { "id": "A-gate4",      "name": "Gate A4",             "shortName": "A4",         "x": 540, "y": 380, "w": 84,  "h": 120, "type": "gate",     "terminalId": "TMA", "floor": 0, "gateCode": "A4", "sensors": 2, "binCount": 2, "capacity": 250 },
+          { "id": "A-gate5",      "name": "Gate A5",             "shortName": "A5",         "x": 636, "y": 380, "w": 84,  "h": 120, "type": "gate",     "terminalId": "TMA", "floor": 0, "gateCode": "A5", "sensors": 2, "binCount": 2, "capacity": 250 },
+          { "id": "A-gate6",      "name": "Gate A6",             "shortName": "A6",         "x": 732, "y": 380, "w": 48,  "h": 120, "type": "gate",     "terminalId": "TMA", "floor": 0, "gateCode": "A6", "sensors": 2, "binCount": 2, "capacity": 180 }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Arrivals",
+        "corridors": [
+          { "x": 20, "y": 200, "w": 760, "h": 36 },
+          { "x": 20, "y": 340, "w": 760, "h": 36 },
+          { "x": 300, "y": 20, "w": 36, "h": 480 },
+          { "x": 500, "y": 20, "w": 36, "h": 480 }
+        ],
+        "zones": [
+          { "id": "A-baggage1",   "name": "Baggage Claim 1",     "shortName": "Baggage 1",  "x": 20,  "y": 20,  "w": 276, "h": 176, "type": "baggage",  "terminalId": "TMA", "floor": 1, "sensors": 4, "binCount": 4, "capacity": 400 },
+          { "id": "A-customs",    "name": "Customs & Border",    "shortName": "Customs",    "x": 340, "y": 20,  "w": 156, "h": 176, "type": "security", "terminalId": "TMA", "floor": 1, "sensors": 3, "binCount": 2, "capacity": 200 },
+          { "id": "A-meetgreet",  "name": "Meet & Greet",        "shortName": "Meet/Greet", "x": 540, "y": 20,  "w": 240, "h": 176, "type": "atrium",   "terminalId": "TMA", "floor": 1, "sensors": 4, "binCount": 3, "capacity": 300 },
+          { "id": "A-wc3m",       "name": "Restroom Arr — Men",  "shortName": "WC M",       "x": 20,  "y": 240, "w": 80,  "h": 96,  "type": "restroom", "terminalId": "TMA", "floor": 1, "sensors": 2, "binCount": 3, "capacity": 20 },
+          { "id": "A-wc3f",       "name": "Restroom Arr — Women","shortName": "WC W",       "x": 110, "y": 240, "w": 80,  "h": 96,  "type": "restroom", "terminalId": "TMA", "floor": 1, "sensors": 2, "binCount": 3, "capacity": 20 },
+          { "id": "A-carrent",    "name": "Car Rental Desk",     "shortName": "Car Rental", "x": 200, "y": 240, "w": 96,  "h": 96,  "type": "retail",   "terminalId": "TMA", "floor": 1, "sensors": 1, "binCount": 1, "capacity": 30 },
+          { "id": "A-food2",      "name": "Arrivals Café",       "shortName": "Arr Café",   "x": 340, "y": 240, "w": 156, "h": 96,  "type": "food",     "terminalId": "TMA", "floor": 1, "sensors": 3, "binCount": 4, "capacity": 100 },
+          { "id": "A-staff1",     "name": "Staff Area A",        "shortName": "Staff",      "x": 540, "y": 240, "w": 100, "h": 96,  "type": "staff",    "terminalId": "TMA", "floor": 1, "sensors": 1, "binCount": 2, "capacity": 30 },
+          { "id": "A-dock1",      "name": "Robot Dock A",        "shortName": "Dock A",     "x": 650, "y": 240, "w": 130, "h": 96,  "type": "dock",     "terminalId": "TMA", "floor": 1, "sensors": 1, "binCount": 0, "capacity": 10 },
+          { "id": "A-baggage2",   "name": "Baggage Claim 2",     "shortName": "Baggage 2",  "x": 20,  "y": 380, "w": 180, "h": 120, "type": "baggage",  "terminalId": "TMA", "floor": 1, "sensors": 3, "binCount": 3, "capacity": 300 },
+          { "id": "A-lounge2",    "name": "Arrivals Lounge",     "shortName": "Arr Lounge", "x": 212, "y": 380, "w": 84,  "h": 120, "type": "lounge",   "terminalId": "TMA", "floor": 1, "sensors": 2, "binCount": 2, "capacity": 80 },
+          { "id": "A-taxi",       "name": "Taxi & Transfers",    "shortName": "Taxi/Bus",   "x": 340, "y": 380, "w": 156, "h": 120, "type": "checkin",  "terminalId": "TMA", "floor": 1, "sensors": 2, "binCount": 2, "capacity": 150 },
+          { "id": "A-retail2",    "name": "Arrivals Retail",     "shortName": "Retail",     "x": 540, "y": 380, "w": 240, "h": 120, "type": "retail",   "terminalId": "TMA", "floor": 1, "sensors": 2, "binCount": 3, "capacity": 100 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TMB",
+    "name": "Terminal B — Domestic",
+    "shortName": "TMB",
+    "floors": [
+      {
+        "id": 0,
+        "name": "Departures",
+        "corridors": [
+          { "x": 20, "y": 190, "w": 760, "h": 32 },
+          { "x": 20, "y": 330, "w": 760, "h": 32 },
+          { "x": 290, "y": 20, "w": 32, "h": 480 },
+          { "x": 478, "y": 20, "w": 32, "h": 480 }
+        ],
+        "zones": [
+          { "id": "B-checkin",    "name": "Check-in Hall B",     "shortName": "Check-in",   "x": 20,  "y": 20,  "w": 266, "h": 166, "type": "checkin",  "terminalId": "TMB", "floor": 0, "sensors": 4, "binCount": 4, "capacity": 600 },
+          { "id": "B-security",   "name": "Security Gate B",     "shortName": "Security",   "x": 326, "y": 20,  "w": 148, "h": 166, "type": "security", "terminalId": "TMB", "floor": 0, "sensors": 3, "binCount": 2, "capacity": 200 },
+          { "id": "B-food1",      "name": "Quick Bites Food Court","shortName":"Food Court", "x": 514, "y": 20,  "w": 266, "h": 166, "type": "food",     "terminalId": "TMB", "floor": 0, "sensors": 4, "binCount": 6, "capacity": 250 },
+          { "id": "B-wc1m",       "name": "Restroom — Men",      "shortName": "WC M",       "x": 20,  "y": 226, "w": 76,  "h": 100, "type": "restroom", "terminalId": "TMB", "floor": 0, "sensors": 2, "binCount": 3, "capacity": 20 },
+          { "id": "B-wc1f",       "name": "Restroom — Women",    "shortName": "WC W",       "x": 106, "y": 226, "w": 76,  "h": 100, "type": "restroom", "terminalId": "TMB", "floor": 0, "sensors": 2, "binCount": 3, "capacity": 20 },
+          { "id": "B-retail1",    "name": "News & Convenience",  "shortName": "News/Conv",  "x": 192, "y": 226, "w": 94,  "h": 100, "type": "retail",   "terminalId": "TMB", "floor": 0, "sensors": 2, "binCount": 2, "capacity": 50 },
+          { "id": "B-dutyfree",   "name": "Duty Free B",         "shortName": "Duty Free",  "x": 326, "y": 226, "w": 148, "h": 100, "type": "retail",   "terminalId": "TMB", "floor": 0, "sensors": 2, "binCount": 2, "capacity": 100 },
+          { "id": "B-cafe1",      "name": "Sky Café",            "shortName": "Sky Café",   "x": 514, "y": 226, "w": 130, "h": 100, "type": "food",     "terminalId": "TMB", "floor": 0, "sensors": 2, "binCount": 3, "capacity": 80 },
+          { "id": "B-lounge1",    "name": "Express Lounge",      "shortName": "Lounge",     "x": 654, "y": 226, "w": 126, "h": 100, "type": "lounge",   "terminalId": "TMB", "floor": 0, "sensors": 2, "binCount": 2, "capacity": 60 },
+          { "id": "B-gate1",      "name": "Gate B1",             "shortName": "B1",         "x": 20,  "y": 366, "w": 80,  "h": 134, "type": "gate",     "terminalId": "TMB", "floor": 0, "gateCode": "B1", "sensors": 2, "binCount": 2, "capacity": 150 },
+          { "id": "B-gate2",      "name": "Gate B2",             "shortName": "B2",         "x": 112, "y": 366, "w": 80,  "h": 134, "type": "gate",     "terminalId": "TMB", "floor": 0, "gateCode": "B2", "sensors": 2, "binCount": 2, "capacity": 150 },
+          { "id": "B-gate3",      "name": "Gate B3",             "shortName": "B3",         "x": 204, "y": 366, "w": 82,  "h": 134, "type": "gate",     "terminalId": "TMB", "floor": 0, "gateCode": "B3", "sensors": 2, "binCount": 2, "capacity": 150 },
+          { "id": "B-wc2",        "name": "Restroom Airside B",  "shortName": "WC Air",     "x": 326, "y": 366, "w": 76,  "h": 134, "type": "restroom", "terminalId": "TMB", "floor": 0, "sensors": 2, "binCount": 3, "capacity": 25 },
+          { "id": "B-gate4",      "name": "Gate B4",             "shortName": "B4",         "x": 414, "y": 366, "w": 60,  "h": 134, "type": "gate",     "terminalId": "TMB", "floor": 0, "gateCode": "B4", "sensors": 2, "binCount": 2, "capacity": 150 },
+          { "id": "B-gate5",      "name": "Gate B5",             "shortName": "B5",         "x": 514, "y": 366, "w": 80,  "h": 134, "type": "gate",     "terminalId": "TMB", "floor": 0, "gateCode": "B5", "sensors": 2, "binCount": 2, "capacity": 150 },
+          { "id": "B-gate6",      "name": "Gate B6",             "shortName": "B6",         "x": 606, "y": 366, "w": 80,  "h": 134, "type": "gate",     "terminalId": "TMB", "floor": 0, "gateCode": "B6", "sensors": 2, "binCount": 2, "capacity": 150 },
+          { "id": "B-gate7",      "name": "Gate B7",             "shortName": "B7",         "x": 698, "y": 366, "w": 82,  "h": 134, "type": "gate",     "terminalId": "TMB", "floor": 0, "gateCode": "B7", "sensors": 2, "binCount": 2, "capacity": 150 }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Arrivals",
+        "corridors": [
+          { "x": 20, "y": 190, "w": 760, "h": 32 },
+          { "x": 20, "y": 330, "w": 760, "h": 32 },
+          { "x": 290, "y": 20, "w": 32, "h": 480 },
+          { "x": 478, "y": 20, "w": 32, "h": 480 }
+        ],
+        "zones": [
+          { "id": "B-baggage",    "name": "Baggage Reclaim B",   "shortName": "Baggage",    "x": 20,  "y": 20,  "w": 266, "h": 166, "type": "baggage",  "terminalId": "TMB", "floor": 1, "sensors": 3, "binCount": 4, "capacity": 350 },
+          { "id": "B-arrlounge",  "name": "Arrivals Hall",       "shortName": "Arr Hall",   "x": 326, "y": 20,  "w": 148, "h": 166, "type": "atrium",   "terminalId": "TMB", "floor": 1, "sensors": 3, "binCount": 3, "capacity": 250 },
+          { "id": "B-pickup",     "name": "Pick-up & Ground Transport","shortName":"Pick-up","x": 514, "y": 20,  "w": 266, "h": 166, "type": "checkin",  "terminalId": "TMB", "floor": 1, "sensors": 3, "binCount": 3, "capacity": 200 },
+          { "id": "B-wc3m",       "name": "Restroom Arr — Men",  "shortName": "WC M",       "x": 20,  "y": 226, "w": 76,  "h": 100, "type": "restroom", "terminalId": "TMB", "floor": 1, "sensors": 2, "binCount": 3, "capacity": 20 },
+          { "id": "B-wc3f",       "name": "Restroom Arr — Women","shortName": "WC W",       "x": 106, "y": 226, "w": 76,  "h": 100, "type": "restroom", "terminalId": "TMB", "floor": 1, "sensors": 2, "binCount": 3, "capacity": 20 },
+          { "id": "B-food2",      "name": "Arrivals Café B",     "shortName": "Arr Café",   "x": 192, "y": 226, "w": 94,  "h": 100, "type": "food",     "terminalId": "TMB", "floor": 1, "sensors": 2, "binCount": 3, "capacity": 80 },
+          { "id": "B-staff2",     "name": "Staff Room B",        "shortName": "Staff",      "x": 326, "y": 226, "w": 100, "h": 100, "type": "staff",    "terminalId": "TMB", "floor": 1, "sensors": 1, "binCount": 2, "capacity": 25 },
+          { "id": "B-dock2",      "name": "Robot Dock B",        "shortName": "Dock B",     "x": 436, "y": 226, "w": 38,  "h": 100, "type": "dock",     "terminalId": "TMB", "floor": 1, "sensors": 1, "binCount": 0, "capacity": 8 },
+          { "id": "B-retail2",    "name": "Souvenirs & Gifts",   "shortName": "Souvenirs",  "x": 514, "y": 226, "w": 266, "h": 100, "type": "retail",   "terminalId": "TMB", "floor": 1, "sensors": 2, "binCount": 3, "capacity": 80 },
+          { "id": "B-utility",    "name": "Utility & Maintenance","shortName":"Utility",    "x": 20,  "y": 366, "w": 130, "h": 134, "type": "utility",  "terminalId": "TMB", "floor": 1, "sensors": 1, "binCount": 1, "capacity": 10 },
+          { "id": "B-storage",    "name": "Storage B",           "shortName": "Storage",    "x": 162, "y": 366, "w": 124, "h": 134, "type": "utility",  "terminalId": "TMB", "floor": 1, "sensors": 1, "binCount": 1, "capacity": 10 },
+          { "id": "B-transfer",   "name": "Transfer Desk",       "shortName": "Transfer",   "x": 326, "y": 366, "w": 148, "h": 134, "type": "checkin",  "terminalId": "TMB", "floor": 1, "sensors": 2, "binCount": 2, "capacity": 60 },
+          { "id": "B-parking",    "name": "Parking Info",        "shortName": "Parking",    "x": 514, "y": 366, "w": 130, "h": 134, "type": "retail",   "terminalId": "TMB", "floor": 1, "sensors": 1, "binCount": 1, "capacity": 40 },
+          { "id": "B-taxi2",      "name": "Taxi Rank B",         "shortName": "Taxi",       "x": 656, "y": 366, "w": 124, "h": 134, "type": "checkin",  "terminalId": "TMB", "floor": 1, "sensors": 2, "binCount": 2, "capacity": 100 }
+        ]
+      }
+    ]
+  }
+]

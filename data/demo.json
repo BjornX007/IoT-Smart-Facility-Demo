@@ -1,0 +1,181 @@
+{
+  "robots": [
+    {
+      "id": "R01", "name": "AeroBot-01", "model": "CleanDroid X9",
+      "terminalId": "TMA", "status": "mopping", "battery": 78,
+      "position": { "x": 420, "y": 290, "floor": 0, "terminalId": "TMA" },
+      "targetZoneId": "A-wc1m", "currentTask": "Cleaning Restroom Men",
+      "eta": 4, "totalJobsToday": 7, "distanceCoveredM": 1240
+    },
+    {
+      "id": "R02", "name": "AeroBot-02", "model": "CleanDroid X9",
+      "terminalId": "TMA", "status": "docked", "battery": 100,
+      "position": { "x": 685, "y": 280, "floor": 1, "terminalId": "TMA" },
+      "targetZoneId": null, "currentTask": "Standby — fully charged",
+      "eta": null, "totalJobsToday": 5, "distanceCoveredM": 890
+    },
+    {
+      "id": "R03", "name": "AeroBot-03", "model": "CleanDroid X9",
+      "terminalId": "TMA", "status": "navigating", "battery": 62,
+      "position": { "x": 200, "y": 100, "floor": 0, "terminalId": "TMA" },
+      "targetZoneId": "A-food1", "currentTask": "En route to Food Hall",
+      "eta": 2, "totalJobsToday": 9, "distanceCoveredM": 2100
+    },
+    {
+      "id": "R04", "name": "AeroBot-04", "model": "CleanDroid X9",
+      "terminalId": "TMB", "status": "collecting", "battery": 45,
+      "position": { "x": 360, "y": 260, "floor": 0, "terminalId": "TMB" },
+      "targetZoneId": "B-food1", "currentTask": "Bin collection — Food Court",
+      "eta": 3, "totalJobsToday": 11, "distanceCoveredM": 3200
+    },
+    {
+      "id": "R05", "name": "AeroBot-05", "model": "CleanDroid X9",
+      "terminalId": "TMB", "status": "charging", "battery": 12,
+      "position": { "x": 450, "y": 260, "floor": 1, "terminalId": "TMB" },
+      "targetZoneId": null, "currentTask": "Charging — low battery",
+      "eta": null, "totalJobsToday": 6, "distanceCoveredM": 1780
+    }
+  ],
+  "workers": [
+    {
+      "id": "W01", "name": "Sarah Mitchell", "initials": "SM",
+      "terminalId": "TMA", "floor": 0, "status": "active",
+      "currentTask": "Restroom deep clean — A-wc1f", "zoneId": "A-wc1f",
+      "efficiency": 94, "jobsToday": 12, "avgResponseMin": 3
+    },
+    {
+      "id": "W02", "name": "James Okafor", "initials": "JO",
+      "terminalId": "TMA", "floor": 0, "status": "transit",
+      "currentTask": "En route to Gate A4", "zoneId": "A-gate4",
+      "efficiency": 88, "jobsToday": 9, "avgResponseMin": 4
+    },
+    {
+      "id": "W03", "name": "Priya Nair", "initials": "PN",
+      "terminalId": "TMA", "floor": 1, "status": "active",
+      "currentTask": "Baggage Claim sweep", "zoneId": "A-baggage1",
+      "efficiency": 91, "jobsToday": 8, "avgResponseMin": 5
+    },
+    {
+      "id": "W04", "name": "Tom Berger", "initials": "TB",
+      "terminalId": "TMB", "floor": 0, "status": "idle",
+      "currentTask": "Awaiting assignment", "zoneId": null,
+      "efficiency": 79, "jobsToday": 6, "avgResponseMin": 6
+    },
+    {
+      "id": "W05", "name": "Lena Kovács", "initials": "LK",
+      "terminalId": "TMB", "floor": 0, "status": "active",
+      "currentTask": "Food Court bin round", "zoneId": "B-food1",
+      "efficiency": 96, "jobsToday": 14, "avgResponseMin": 2
+    },
+    {
+      "id": "W06", "name": "André Silva", "initials": "AS",
+      "terminalId": "TMB", "floor": 1, "status": "break",
+      "currentTask": "Break — returns 14:30", "zoneId": null,
+      "efficiency": 85, "jobsToday": 7, "avgResponseMin": 4
+    }
+  ],
+  "reports": [
+    {
+      "id": "RPT-001", "type": "spill", "urgency": "critical",
+      "zoneId": "A-food1", "zoneName": "International Food Hall",
+      "terminalId": "TMA", "floor": 0,
+      "description": "Large coffee spill near seating area, slip hazard",
+      "status": "inprogress", "createdAt": "2025-01-15T13:42:00Z",
+      "updatedAt": "2025-01-15T13:44:00Z", "resolvedAt": null,
+      "assignedRobotId": "R03", "assignedWorkerId": "W02",
+      "trackingCode": "AER-7821"
+    },
+    {
+      "id": "RPT-002", "type": "bin_overflow", "urgency": "high",
+      "zoneId": "B-food1", "zoneName": "Quick Bites Food Court",
+      "terminalId": "TMB", "floor": 0,
+      "description": "Bins 2 and 3 are overflowing at food court",
+      "status": "inprogress", "createdAt": "2025-01-15T13:20:00Z",
+      "updatedAt": "2025-01-15T13:35:00Z", "resolvedAt": null,
+      "assignedRobotId": "R04", "assignedWorkerId": "W05",
+      "trackingCode": "AER-7819"
+    },
+    {
+      "id": "RPT-003", "type": "restroom", "urgency": "medium",
+      "zoneId": "A-wc1m", "zoneName": "Restroom — Men",
+      "terminalId": "TMA", "floor": 0,
+      "description": "Soap dispenser empty, floor needs mopping",
+      "status": "resolved", "createdAt": "2025-01-15T12:10:00Z",
+      "updatedAt": "2025-01-15T12:28:00Z", "resolvedAt": "2025-01-15T12:28:00Z",
+      "assignedRobotId": "R01", "assignedWorkerId": "W01",
+      "trackingCode": "AER-7814"
+    },
+    {
+      "id": "RPT-004", "type": "smell", "urgency": "low",
+      "zoneId": "B-baggage", "zoneName": "Baggage Reclaim B",
+      "terminalId": "TMB", "floor": 1,
+      "description": "Unpleasant odour near carousel 2",
+      "status": "pending", "createdAt": "2025-01-15T13:55:00Z",
+      "updatedAt": "2025-01-15T13:55:00Z", "resolvedAt": null,
+      "assignedRobotId": null, "assignedWorkerId": null,
+      "trackingCode": "AER-7823"
+    },
+    {
+      "id": "RPT-005", "type": "broken", "urgency": "medium",
+      "zoneId": "A-security", "zoneName": "Security Control",
+      "terminalId": "TMA", "floor": 0,
+      "description": "Hand sanitiser dispenser broken at lane 3",
+      "status": "pending", "createdAt": "2025-01-15T13:50:00Z",
+      "updatedAt": "2025-01-15T13:50:00Z", "resolvedAt": null,
+      "assignedRobotId": null, "assignedWorkerId": null,
+      "trackingCode": "AER-7822"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "RV-01", "reportId": "RPT-003",
+      "zoneId": "A-wc1m", "zoneName": "Restroom — Men",
+      "stars": 5, "comment": "Incredibly fast response. Restroom was spotless within minutes.",
+      "category": "response_time", "createdAt": "2025-01-15T12:35:00Z"
+    },
+    {
+      "id": "RV-02", "reportId": null,
+      "zoneId": "A-lounge1", "zoneName": "Business Lounge",
+      "stars": 5, "comment": "Lounge is immaculate as always. Great work by the team.",
+      "category": "cleaning", "createdAt": "2025-01-15T11:20:00Z"
+    },
+    {
+      "id": "RV-03", "reportId": null,
+      "zoneId": "B-food1", "zoneName": "Quick Bites Food Court",
+      "stars": 3, "comment": "Bins were nearly full during the busy period. Needed more attention.",
+      "category": "facilities", "createdAt": "2025-01-15T12:55:00Z"
+    },
+    {
+      "id": "RV-04", "reportId": null,
+      "zoneId": "A-checkin", "zoneName": "Check-in Hall",
+      "stars": 4, "comment": "Very clean for such a busy area. Staff very professional.",
+      "category": "staff", "createdAt": "2025-01-15T10:40:00Z"
+    },
+    {
+      "id": "RV-05", "reportId": null,
+      "zoneId": "B-gate2", "zoneName": "Gate B2",
+      "stars": 5, "comment": "Gate area was cleaned right after the previous flight boarded. Impressive.",
+      "category": "cleaning", "createdAt": "2025-01-15T09:15:00Z"
+    },
+    {
+      "id": "RV-06", "reportId": null,
+      "zoneId": "A-food1", "zoneName": "International Food Hall",
+      "stars": 4, "comment": "Food hall stays reasonably clean given the volume of people.",
+      "category": "general", "createdAt": "2025-01-15T13:00:00Z"
+    }
+  ],
+  "serviceRequests": [
+    {
+      "id": "SRV-01", "type": "Deep Clean",
+      "zoneId": "A-lounge1", "zoneName": "Business Lounge",
+      "terminalId": "TMA", "scheduledTime": "2025-01-15T22:00:00Z",
+      "status": "confirmed", "createdAt": "2025-01-14T09:00:00Z"
+    },
+    {
+      "id": "SRV-02", "type": "HVAC Filter Replace",
+      "zoneId": "B-utility", "zoneName": "Utility & Maintenance",
+      "terminalId": "TMB", "scheduledTime": "2025-01-16T06:00:00Z",
+      "status": "pending", "createdAt": "2025-01-15T08:00:00Z"
+    }
+  ]
+}

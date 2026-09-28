@@ -1,0 +1,12 @@
+[
+  { "id": "FL001", "flightNumber": "LH 441",  "destination": "Frankfurt",   "scheduledTime": "14:15", "status": "boarding",  "gateCode": "A1", "terminalId": "TMA", "passengers": 280, "type": "departure" },
+  { "id": "FL002", "flightNumber": "EK 152",  "destination": "Dubai",       "scheduledTime": "14:45", "status": "on_time",   "gateCode": "A4", "terminalId": "TMA", "passengers": 380, "type": "departure" },
+  { "id": "FL003", "flightNumber": "BA 308",  "destination": "London",      "scheduledTime": "15:10", "status": "on_time",   "gateCode": "A5", "terminalId": "TMA", "passengers": 310, "type": "departure" },
+  { "id": "FL004", "flightNumber": "AF 1680", "origin": "Paris",            "scheduledTime": "13:55", "status": "arrived",   "gateCode": "A2", "terminalId": "TMA", "passengers": 220, "type": "arrival" },
+  { "id": "FL005", "flightNumber": "QR 067",  "origin": "Doha",             "scheduledTime": "14:30", "status": "delayed",   "gateCode": "A6", "terminalId": "TMA", "passengers": 400, "type": "arrival" },
+  { "id": "FL006", "flightNumber": "D4 201",  "destination": "Munich",      "scheduledTime": "14:20", "status": "boarding",  "gateCode": "B1", "terminalId": "TMB", "passengers": 148, "type": "departure" },
+  { "id": "FL007", "flightNumber": "D4 305",  "destination": "Hamburg",     "scheduledTime": "14:50", "status": "on_time",   "gateCode": "B3", "terminalId": "TMB", "passengers": 142, "type": "departure" },
+  { "id": "FL008", "flightNumber": "D4 419",  "destination": "Berlin",      "scheduledTime": "15:25", "status": "on_time",   "gateCode": "B5", "terminalId": "TMB", "passengers": 165, "type": "departure" },
+  { "id": "FL009", "flightNumber": "D4 088",  "origin": "Vienna",           "scheduledTime": "13:40", "status": "arrived",   "gateCode": "B2", "terminalId": "TMB", "passengers": 155, "type": "arrival" },
+  { "id": "FL010", "flightNumber": "D4 177",  "origin": "Zurich",           "scheduledTime": "14:05", "status": "arrived",   "gateCode": "B4", "terminalId": "TMB", "passengers": 138, "type": "arrival" }
+]
