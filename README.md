@@ -143,4 +143,4 @@ Die Kennzahl „vermiedene Reinigungsfahrten" wird im Dashboard laufend erfasst.
 
 Sensoren, Sensorknoten und Roboter sind aktuell durch eine tickbasierte Simulationsengine ersetzt. Prioritätsberechnung, Disposition, Admin-Anwendung und Melde-App entsprechen der in diesem Dokument beschriebenen Zielarchitektur. Die Anbindung realer Geräte erfordert den Austausch der Simulation durch MQTT-Clients auf Geräte- und Backend-Seite; die übrige Systemlogik bleibt unverändert.
 
-Live-Version: *(Link folgt nach Hosting)*
+Demo-Version: *(Link folgt nach Hosting)*
