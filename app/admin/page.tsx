@@ -15,7 +15,6 @@ import {
   dispatchRobotToZone,
   getAllZones,
 } from "@/lib/store";
-import { findNearestRobot } from "@/lib/robotRouter";
 
 const terminals = terminalsData as Terminal[];
 
@@ -180,14 +179,18 @@ export default function AdminPage() {
                 return { ...prev, zoneStates };
               });
             }}
-            onRequestBinPickup={(binId, zoneId) => {
+            onAssignWorker={(binId, zoneId, workerId) => {
               setState((prev) => {
                 if (!prev) return prev;
                 const zone = getAllZones().find((z) => z.id === zoneId);
-                if (!zone) return prev;
-                const robot = findNearestRobot(zone, prev.robots);
-                if (!robot) return prev;
-                return dispatchRobotToZone(prev, robot.id, zoneId);
+                return {
+                  ...prev,
+                  workers: prev.workers.map((w) =>
+                    w.id === workerId
+                      ? { ...w, status: "transit", zoneId, currentTask: `Bin pickup — ${zone?.name ?? zoneId}` }
+                      : w
+                  ),
+                };
               });
             }}
           />

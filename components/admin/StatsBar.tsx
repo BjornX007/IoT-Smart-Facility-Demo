@@ -93,12 +93,16 @@ export default function StatsBar({ state, onSimulateTick, isAutoRunning, onToggl
         {/* QUIET SECONDARY STATUS — smaller, muted, informational not urgent */}
         <div className="flex items-center gap-4 text-stone-500">
           <div className="flex items-baseline gap-1">
+            
             <span className="font-['Sora'] text-sm font-semibold tabular-nums text-stone-700">{inprogress}</span>
             <span className="text-[11px]">in progress</span>
           </div>
           <div className="flex items-baseline gap-1">
             <span className="font-['Sora'] text-sm font-semibold tabular-nums text-stone-700">{activeRobots}</span>
             <span className="text-[11px]">/ {totalRobots} robots active</span>
+            <button className="text-[17px] font-medium text-blue-600 hover:text-blue-800 border" onClick={() => window.location.href = '/client'}>
+              Test Reporting app
+            </button>
           </div>
         </div>
 

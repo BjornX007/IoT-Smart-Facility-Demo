@@ -270,30 +270,48 @@ export function useFloorPlanDraw(
         }
       }
 
-      // Smart bins
-      if (layers.bins && zs.bins.length > 0 && zone.w >= 40 && zone.h >= 36) {
-        zs.bins.slice(0, 3).forEach((bin, bi) => {
-          const bx = zone.x + 5 + bi * 13;
-          const by = zone.y + zone.h - 18;
-          const bc = binColor(bin.fillLevel);
-          const bh = Math.round(10 * (bin.fillLevel / 100));
+     // Smart bins
+    if (layers.bins && zs.bins.length > 0 && zone.w >= 50 && zone.h >= 50) {
+      zs.bins.slice(0, 3).forEach((bin) => {
+        // Deterministic pseudo-random position per bin, based on its id —
+        // stays stable across ticks, but spreads bins across the zone
+        // instead of stacking them all in one corner.
+        let hash = 0;
+        for (let i = 0; i < bin.id.length; i++) {
+          hash = (hash * 31 + bin.id.charCodeAt(i)) >>> 0;
+        }
+        const rx = (hash % 1000) / 1000;         // 0..1 pseudo-random
+        const ry = ((hash >> 10) % 1000) / 1000; // different bits for y
 
-          // Bin outline
-          ctx.strokeStyle = bc;
-          ctx.lineWidth = 1;
-          ctx.strokeRect(bx, by, 10, 13);
+        // Reserve margins: top ~20px (zone name), bottom ~14px (traffic %/priority label), sides ~14px
+        const marginTop = 20;
+        const marginBottom = 16;
+        const marginSide = 14;
+const usableW = Math.max(0, zone.w - marginSide * 2 - 10);
+const usableH = Math.max(0, zone.h - marginTop - marginBottom - 13);
 
-          // Fill bar
-          ctx.fillStyle = bc + '99';
-          ctx.fillRect(bx, by + 13 - bh, 10, bh);
+const bx = zone.x + marginSide + rx * usableW;
+const by = zone.y + marginTop + ry * usableH;
 
-          // Critical pulse
-          if (bin.fillLevel >= 85) {
-            ctx.beginPath(); ctx.arc(bx + 5, by - 3, 3, 0, Math.PI * 2);
-            ctx.fillStyle = C.binRed; ctx.fill();
-          }
-        });
-      }
+        const bc = binColor(bin.fillLevel);
+        const bh = Math.round(10 * (bin.fillLevel / 100));
+
+        // Bin outline
+        ctx.strokeStyle = bc;
+        ctx.lineWidth = 1;
+        ctx.strokeRect(bx, by, 10, 13);
+
+        // Fill bar
+        ctx.fillStyle = bc + '99';
+        ctx.fillRect(bx, by + 13 - bh, 10, bh);
+
+        // Critical pulse
+        if (bin.fillLevel >= 85) {
+          ctx.beginPath(); ctx.arc(bx + 5, by - 3, 3, 0, Math.PI * 2);
+          ctx.fillStyle = C.binRed; ctx.fill();
+        }
+      });
+    }
     });
 
     // Robots
