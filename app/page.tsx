@@ -156,70 +156,7 @@ export default function HomePage() {
           SIMULIERTE PLATTFORM
         </div>
       </header>
-
-      {/* VIDEO HERO */}
-      <section
-        style={{
-          padding: "38px 24px 0",
-          maxWidth: 1180,
-          margin: "0 auto",
-        }}
-      >
-        <div
-          style={{
-            position: "relative",
-            width: "100%",
-            aspectRatio: "16 / 8.5",
-            minHeight: 300,
-            maxHeight: 680,
-            borderRadius: 24,
-            overflow: "hidden",
-            background: "#171411",
-            boxShadow: "0 25px 70px rgba(45,36,24,0.18)",
-          }}
-        >
-         <video
-  src="/smartFacility.mp4"
-  autoPlay
-  playsInline
-  controls
-  onEnded={() => {
-    heroTextRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }}
-  style={{
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    display: "block",
-  }}
-/>
-
-          {/* Video label */}
-          <div
-            style={{
-              position: "absolute",
-              top: 18,
-              left: 18,
-              padding: "8px 12px",
-              borderRadius: 10,
-              background: "rgba(20,17,14,0.72)",
-              backdropFilter: "blur(8px)",
-              color: "white",
-              fontSize: 11,
-              fontWeight: 600,
-              letterSpacing: "0.02em",
-              pointerEvents: "none",
-            }}
-          >
-            SMART FACILITY · LIVE DEMO
-          </div>
-        </div>
-      </section>
-
-      {/* HERO TEXT */}
+        {/* HERO TEXT */}
       <section
   ref={heroTextRef}
   style={{
@@ -449,6 +386,70 @@ export default function HomePage() {
           </Link>
         </div>
 
+
+      {/* VIDEO HERO */}
+      <section
+        style={{
+          padding: "38px 24px 0",
+          maxWidth: 1180,
+          margin: "0 auto",
+        }}
+      >
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            aspectRatio: "16 / 8.5",
+            minHeight: 300,
+            maxHeight: 680,
+            borderRadius: 24,
+            overflow: "hidden",
+            background: "#171411",
+            boxShadow: "0 25px 70px rgba(45,36,24,0.18)",
+          }}
+        >
+         <video
+  src="/smartFacility.mp4"
+  autoPlay
+  playsInline
+  controls
+  onEnded={() => {
+    heroTextRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    display: "block",
+  }}
+/>
+
+          {/* Video label */}
+          <div
+            style={{
+              position: "absolute",
+              top: 18,
+              left: 18,
+              padding: "8px 12px",
+              borderRadius: 10,
+              background: "rgba(20,17,14,0.72)",
+              backdropFilter: "blur(8px)",
+              color: "white",
+              fontSize: 11,
+              fontWeight: 600,
+              letterSpacing: "0.02em",
+              pointerEvents: "none",
+            }}
+          >
+            SMART FACILITY · LIVE DEMO
+          </div>
+        </div>
+      </section>
+
+    
         <p
           style={{
             textAlign: "center",
@@ -461,6 +462,83 @@ export default function HomePage() {
         </p>
       </section>
 
+      {/* KONZEPT — Beschreibung + Demo-Video */}
+      <section
+        style={{
+          maxWidth: 900,
+          margin: "0 auto",
+          padding: "72px 32px",
+        }}
+      >
+        <h2
+          style={{
+            fontFamily: "'Sora', sans-serif",
+            fontWeight: 700,
+            fontSize: "clamp(24px, 3.5vw, 32px)",
+            margin: "0 0 20px",
+            textAlign: "center",
+          }}
+        >
+          Wie das System funktioniert
+        </h2>
+
+        <p
+          style={{
+            fontSize: 16,
+            lineHeight: 1.75,
+            color: "#5a4d3a",
+            maxWidth: 720,
+            margin: "0 auto 48px",
+            textAlign: "center",
+          }}
+        >
+          Sensoren erfassen laufend die Belegung einzelner Zonen und den Füllstand der
+          Mülleimer. Diese Werte werden gemeinsam mit eingehenden Nutzermeldungen
+          ausgewertet, um jeder Zone eine Priorität zuzuweisen. Auf dieser Grundlage
+          entscheidet das System selbstständig, welcher Reinigungsroboter zu welcher
+          Zone geschickt wird — oder das Betriebspersonal übernimmt die Steuerung
+          jederzeit manuell. Alle Daten laufen dabei in Echtzeit im Admin-Dashboard
+          zusammen: Heatmap, Mülleimer-Status, Roboterposition und eingehende
+          Meldungen sind auf einen Blick sichtbar.
+        </p>
+
+        {/* Demo-Video */}
+        <div
+          style={{
+            border: "1px solid #e8e4df",
+            borderRadius: 16,
+            background: "white",
+            aspectRatio: "16 / 9",
+            overflow: "hidden",
+          }}
+        >
+          <video
+            src="/iot.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              display: "block",
+            }}
+          />
+        </div>
+
+        <p
+          style={{
+            fontSize: 12.5,
+            color: "#a89880",
+            textAlign: "center",
+            marginTop: 14,
+          }}
+        >
+          Live-Demo: Kartenansichten, Filterebenen, Mülleimer- und Roboterstatus,
+          Auftragszuweisung und die Melde-Ansicht
+        </p>
+      </section>
       {/* FEATURES */}
       <section
         style={{
